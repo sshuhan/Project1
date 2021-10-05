@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta charset="utf-8">
+		<title>Project1</title>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+
+	<section id="home" class="video-hero" style="height: 500px; background-image: url(images/cover_img_1.jpg);  background-size:cover; background-position: center center;background-attachment:fixed;" data-section="home">
+		<div class="overlay"></div>
+			<div class="display-t display-t2 text-center">
+				<div class="display-tc display-tc2">
+					<div class="container">
+						<div class="col-md-12 col-md-offset-0">
+							<div class="animate-box">
+								<h2>Database: Instacart</h2>
+								<p class="breadcrumbs"><span>CS527</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+<br>
+
+	<div class="form-check" style="text-align:center">
+		<input class="form-check-input" type="radio" name="selectDatabase" id="MySQL" checked>
+		<label class="form-check-label" for="MySQL">
+            MySQL
+        </label>
+		<input class="form-check-input" type="radio" name="selectDatabase" id="Redshift">
+		<label class="form-check-label" for="Redshift">
+            Redshift
+        </label>
+    </div>
+
+<div id="input" style="height:300px;width:50%;margin:auto;">
+        <form name= "form1" action="/search" method='get' style="margin-top: 20px">
+            <label for="InputWord"></label>
+            <textarea class="form-control form-control-lg" id="InputWord" name ="txt" rows="5" style="width:100%;" placeholder="Please input your query."></textarea>
+            <div style="float:right; margin-top: 15px; margin-bottom: 18px"><button class="btn btn-outline-dark" type="submit">Run<i class="fas fa-check"></i></button></div>
+        </form>
+ </div>
+
+<div id="output" style="height:300px;width:50%;margin:auto;">
+        <form name= "form2" method='post' style="margin-top: 20px">
+            <label for="edtOutputWord"></label>
+            <textarea class="form-control form-control-lg" id="edtOutputWord" name ="txt" rows="15" style="width:100%;"></textarea>
+        </form>
+ </div>
+	<footer></footer>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Main -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
